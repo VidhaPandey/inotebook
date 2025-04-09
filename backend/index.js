@@ -8,12 +8,12 @@ const port = 3000;
 app.use(express.json());
 
 // Connect to MongoDB
-connectToMongo();
+//connectToMongo();
 
 //Available Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/notes', require('./routes/notes'));
 
 app.listen(port, () => {
-    console.log(`iNotebook backend listening on port ${port}`)
+    console.log(`iNotebook backend listening on port http://localhost:${port}`);
 });
